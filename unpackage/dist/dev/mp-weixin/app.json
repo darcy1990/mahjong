@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/reserve/reserve",
+    "pages/rank/rank",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/reserve/reserve",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "排行"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

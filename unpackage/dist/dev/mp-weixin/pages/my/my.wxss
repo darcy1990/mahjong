@@ -1,0 +1,17 @@
+
+.container {
+		padding: 20px;
+		font-size: 14px;
+		line-height: 24px;
+}
+.notice {
+		width: 350px;
+		height: 48px;
+}
+.im {
+		width: 250px;
+		height: 200px;
+}
+.tt {
+		width: 350px;
+}

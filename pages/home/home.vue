@@ -1,19 +1,22 @@
 <template>
 	<view class="container">
 		<view>修罗雀庄</view>
-		<view>公告 {{notice}}</view>
+		<view class="notice">公告 {{notice}}</view>
 		<view>当前正在进行的组局</view>
-		<li v-for="room in rooms">
-		  {{ room }}
-		  <text>加入</text>
-		</li>
-		<view>当前正在进行的组局</view>
+		<view v-for="room in rooms">
+			{{ room }}
+			<button size="mini">加入</button>
+		</view>
+		<view></view>
+		<view>房间列表</view>
 		<li v-for="rroom in rrooms">
-		  <text>{{ rroom.name }}</text>
-		  <image src="{{rroom.img}}"></image>
-		  <text>{{ rroom.desc }}</text>
-		  <button>预约</button>
-		  <button>查看可用时间段</button>
+			<view>
+				<view>{{ rroom.name }}</view>
+				<image src="../../static/rooms/room2.png" class="im"></image>
+				<view>{{ rroom.desc }}</view>
+				<button size="mini">预约</button>
+				<button size="mini">查看可用时间段</button>
+			</view>
 		</li>
 	</view>
 </template>
@@ -25,20 +28,19 @@
 				href: 'https://uniapp.dcloud.io/component/README?id=uniui',
 				notice: 'xxxxxxxxxxxx',
 				rooms: ['金之间, 13:00 ~ 18:00', '金之间, 13:00 ~ 18:00', '金之间, 13:00 ~ 18:00'],
-				rrooms: [
-					{
+				rrooms: [{
 						"name": "金之间",
-						"img": "https://i0.hdslb.com/bfs/archive/c8fd97a40bf79f03e7b76cbc87236f612caef7b2.png",
+						"img": "../../static/rooms/room1.png",
 						"desc": "大洋化学，4口，1层"
 					},
 					{
 						"name": "玉之间",
-						"img": "https://i0.hdslb.com/bfs/archive/c8fd97a40bf79f03e7b76cbc87236f612caef7b2.png",
+						"img": "../../static/rooms/room1.png",
 						"desc": "大洋化学，4口，1层"
 					},
 					{
 						"name": "铜之间",
-						"img": "https://i0.hdslb.com/bfs/archive/c8fd97a40bf79f03e7b76cbc87236f612caef7b2.png",
+						"img": "../../static/rooms/room1.png",
 						"desc": "大洋化学，4口，1层"
 					}
 				]
@@ -55,5 +57,19 @@
 		padding: 20px;
 		font-size: 14px;
 		line-height: 24px;
+	}
+
+	.notice {
+		width: 350px;
+		height: 48px;
+	}
+
+	.im {
+		width: 250px;
+		height: 200px;
+	}
+
+	.tt {
+		width: 350px;
 	}
 </style>

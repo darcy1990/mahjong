@@ -1,10 +1,44 @@
 {
 	"pages": [{
-		"path": "pages/home/home",
-		"style": {
-			"navigationBarTitleText": "uni-app"
-		}
-	}],
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},{
+			"path": "pages/reserve/reserve",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},{
+			"path": "pages/rank/rank",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/home/home",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/reserve/reserve",
+			"text": "预约"
+		}, {
+			"pagePath": "pages/rank/rank",
+			"text": "排行"
+		}, {
+			"pagePath": "pages/my/my",
+			"text": "我的"
+		}]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
