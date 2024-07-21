@@ -6,6 +6,11 @@ if (!Math) {
   "./pages/reserve/reserve.js";
   "./pages/rank/rank.js";
   "./pages/my/my.js";
+  "./pages/bind.js";
+  "./pages/current.js";
+  "./pages/reserve/available.js";
+  "./pages/reserve/overtime.js";
+  "./pages/reserve/games.js";
 }
 const _sfc_main = {
   onLaunch: function() {

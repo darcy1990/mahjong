@@ -2,20 +2,26 @@
 	<view class="container">
 		<view>修罗雀庄</view>
 		<view class="notice">公告 {{notice}}</view>
-		<view>当前正在进行的组局</view>
-		<view v-for="room in rooms">
-			{{ room }}
-			<button size="mini">加入</button>
+		<view class="rooms">
+			<view >
+				<text class="middle">当前正在进行的组局</text>
+				<button class="middle left" > >> </button>
+			</view>
+			<view v-for="room in rooms">
+				<text class="middle">{{ room }}</text>
+				<button  class="middle left" >加入</button>
+			</view>
 		</view>
-		<view></view>
 		<view>房间列表</view>
 		<li v-for="rroom in rrooms">
-			<view>
+			<view class="rroom">
 				<view>{{ rroom.name }}</view>
 				<image src="../../static/rooms/room2.png" class="im"></image>
 				<view>{{ rroom.desc }}</view>
-				<button size="mini">预约</button>
-				<button size="mini">查看可用时间段</button>
+				<view >
+					<button  >预约</button>
+					<button  class="left" >查看可用时间段</button>
+				</view>
 			</view>
 		</li>
 	</view>
@@ -53,14 +59,7 @@
 </script>
 
 <style>
-	.container {
-		padding: 20px;
-		font-size: 14px;
-		line-height: 24px;
-	}
-
 	.notice {
-		width: 350px;
 		height: 48px;
 	}
 
@@ -72,4 +71,15 @@
 	.tt {
 		width: 350px;
 	}
+	
+	.rooms {
+		height: 300px;
+	}
+	
+	.rroom {
+		height: 330px;
+	}
+	
+	
+
 </style>

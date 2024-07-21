@@ -2,24 +2,49 @@
 	"pages": [{
 			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
 			}
 		},{
 			"path": "pages/reserve/reserve",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "预约"
 			}
 		},{
 			"path": "pages/rank/rank",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "排行"
 			}
 		},{
 			"path": "pages/my/my",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "我的"
 			}
-		},],
+		},{
+			"path": "pages/bind",
+			"style": {
+				"navigationBarTitleText": "绑定"
+			}
+		},{
+			"path": "pages/current",
+			"style": {
+				"navigationBarTitleText": "当前预约"
+			}
+		},{
+			"path": "pages/reserve/available",
+			"style": {
+				"navigationBarTitleText": "可用时段"
+			}
+		},{
+			"path": "pages/reserve/overtime",
+			"style": {
+				"navigationBarTitleText": "加时"
+			}
+		},{
+			"path": "pages/reserve/games",
+			"style": {
+				"navigationBarTitleText": "对局记录"
+			}
+		}],
 	"tabBar": {
 		"color": "#7A7E83",
 		"selectedColor": "#3cc51f",
@@ -32,7 +57,7 @@
 			"pagePath": "pages/reserve/reserve",
 			"text": "预约"
 		}, {
-			"pagePath": "pages/rank/rank",
+			"pagePath": "pages/reserve/games",
 			"text": "排行"
 		}, {
 			"pagePath": "pages/my/my",

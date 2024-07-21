@@ -1,0 +1,1 @@
+<view class="container"><view class="rooms"><view style="margin:20px"><text class="middle">当前正在进行的组局</text><button class="middle left"> >> </button></view><view wx:for="{{a}}" wx:for-item="room"><view style="margin:10px"><text class="middle">{{room.a}}</text><button class="middle left">加入</button></view></view></view></view>

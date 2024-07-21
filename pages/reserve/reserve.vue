@@ -1,20 +1,35 @@
 <template>
 	<view class="container">
-		<view>修罗雀庄</view>
-		<view class="notice">公告 {{notice}}</view>
-		<view>当前正在进行的组局</view>
-		<li v-for="room in rooms">
-		  {{ room }}
-		  <button size="mini">加入</button>
-		</li>
-		<view>房间列表</view>
-		<li v-for="rroom in rrooms">
-		  <view class="tt">{{ rroom.name }}</view>
-		  <image src="../../static/rooms/room2.png" class="im"></image>
-		  <view class="tt">{{ rroom.desc }}</view>
-		  <button size="mini">预约</button>
-		  <button size="mini">查看可用时间段</button>
-		</li>
+		<view>
+			房间：
+			<uni-data-select style="width: 80%;">金之间</uni-data-select>
+		</view>
+		<view>
+			<view>
+				日期：
+				<uni-datetime-picker></uni-datetime-picker>
+				~
+				<uni-datetime-picker></uni-datetime-picker>
+			</view>
+			<view style="margin-bottom: 10px;">
+				存在相同时段组局，点击加入
+			</view>
+		</view>
+
+		<view>
+			<div class="grid-container">
+				<div class="grid-item"><button>查看可用时间段</button></div>
+				<div class="grid-item"><button>通宵战</button></div>
+				<div class="grid-item"><text class="middle">价格：150 元</text></div>
+				<div class="grid-item"><button class="middle">价格说明</button></div>
+				<div class="grid-item"><button>支付</button></div>
+				<div class="grid-item"><button>加时</button></div>
+				<div class="grid-item"><button>锁定房间</button></div>
+				<div class="grid-item"><button>解锁房间</button></div>
+				<div class="grid-item"><button>上传/查看对局记录</button></div>
+				<div class="grid-item"><button>申请退款</button></div>
+			</div>
+		</view>
 	</view>
 </template>
 
@@ -22,26 +37,7 @@
 	export default {
 		data() {
 			return {
-				href: 'https://uniapp.dcloud.io/component/README?id=uniui',
-				notice: 'xxxxxxxxxxxx',
-				rooms: ['金之间, 13:00 ~ 18:00', '金之间, 13:00 ~ 18:00', '金之间, 13:00 ~ 18:00'],
-				rrooms: [
-					{
-						"name": "金之间",
-						"img": "../../static/rooms/room1.png",
-						"desc": "大洋化学，4口，1层"
-					},
-					{
-						"name": "玉之间",
-						"img": "../../static/rooms/room1.png",
-						"desc": "大洋化学，4口，1层"
-					},
-					{
-						"name": "铜之间",
-						"img": "../../static/rooms/room1.png",
-						"desc": "大洋化学，4口，1层"
-					}
-				]
+
 			}
 		},
 		methods: {
@@ -51,20 +47,9 @@
 </script>
 
 <style>
-	.container {
-		padding: 20px;
-		font-size: 14px;
-		line-height: 24px;
-	}
-	.notice {
-		width: 350px;
-		height: 48px;
-	}
-	.im {
-		width: 250px;
-		height: 200px;
-	}
-	.tt {
-		width: 350px;
+	.grid-container {
+		display: grid;
+		grid-template-columns: 45% 45%;
+		grid-row-gap: 5px;
 	}
 </style>

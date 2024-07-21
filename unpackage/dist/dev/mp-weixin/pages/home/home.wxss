@@ -1,11 +1,5 @@
 
-.container {
-		padding: 20px;
-		font-size: 14px;
-		line-height: 24px;
-}
 .notice {
-		width: 350px;
 		height: 48px;
 }
 .im {
@@ -15,3 +9,12 @@
 .tt {
 		width: 350px;
 }
+.rooms {
+		height: 300px;
+}
+.rroom {
+		height: 330px;
+}
+	
+	
+

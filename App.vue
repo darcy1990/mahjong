@@ -18,6 +18,7 @@
 	@import '@/uni_modules/uni-scss/index.scss';
 	/* #ifndef APP-NVUE */
 	@import '@/static/customicons.css';
+
 	// 设置整个项目的背景色
 	page {
 		background-color: #f5f5f5;
@@ -28,5 +29,32 @@
 		font-size: 14px;
 		color: #333;
 		padding: 10px;
+	}
+
+	.container {
+		font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+		padding: 20px;
+		font-size: 13px;
+		line-height: 24px;
+	}
+
+	button {
+		display: inline-block;
+		font-size: 12px;
+		line-height: 2.3;
+		padding: 0 1.34em;
+		border:none 
+	}
+	
+	view {
+		margin-top: 2px;
+	}
+
+	.left {
+		margin-left: 10px;
+	}
+
+	.middle {
+		vertical-align: middle;
 	}
 </style>

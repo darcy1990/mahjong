@@ -1,0 +1,1 @@
+<view class="container"><view class="wrapper"><view class="bind cell"><view class="center">绑定公式战手机号</view><view><input type="text" class="phone center"></input></view><view class="center">没有绑定公式战，直接跳过</view></view></view><view class="center"><button>提交</button></view></view>

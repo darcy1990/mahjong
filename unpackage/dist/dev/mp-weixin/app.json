@@ -3,7 +3,12 @@
     "pages/home/home",
     "pages/reserve/reserve",
     "pages/rank/rank",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/bind",
+    "pages/current",
+    "pages/reserve/available",
+    "pages/reserve/overtime",
+    "pages/reserve/games"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -26,7 +31,7 @@
         "text": "预约"
       },
       {
-        "pagePath": "pages/rank/rank",
+        "pagePath": "pages/reserve/games",
         "text": "排行"
       },
       {
