@@ -3,27 +3,37 @@
 		<view>修罗雀庄</view>
 		<view class="notice">公告 {{notice}}</view>
 		<view class="rooms">
-			<view >
+			<view>
 				<text class="middle">当前正在进行的组局</text>
-				<button class="middle left" > >> </button>
+				<navigator url="/pages/current?title=redirect" open-type="redirect" hover-class="other-navigator-hover">
+					<button class="middle left"> >> </button>
+				</navigator>
 			</view>
 			<view v-for="room in rooms">
 				<text class="middle">{{ room }}</text>
-				<button  class="middle left" >加入</button>
+				<navigator url="/pages/reserve/reserve" open-type="switchTab" hover-class="other-navigator-hover">
+					<button class="middle left">加入</button>
+				</navigator>
 			</view>
 		</view>
 		<view>房间列表</view>
-		<li v-for="rroom in rrooms">
-			<view class="rroom">
-				<view>{{ rroom.name }}</view>
-				<image src="../../static/rooms/room2.png" class="im"></image>
-				<view>{{ rroom.desc }}</view>
-				<view >
-					<button  >预约</button>
-					<button  class="left" >查看可用时间段</button>
+		<view>
+			<li v-for="rroom in rrooms">
+				<view class="rroom">
+					<view>{{ rroom.name }}</view>
+					<image src="../../static/rooms/room2.png" class="im"></image>
+					<view>{{ rroom.desc }}</view>
+					<view>
+						<navigator url="/pages/reserve/reserve" open-type="switchTab" hover-class="other-navigator-hover">
+							<button>预约</button>
+						</navigator>
+						<navigator url="/pages/reserve/available" open-type="redirect" hover-class="other-navigator-hover">
+							<button class="left">查看可用时间段</button>
+						</navigator>
+					</view>
 				</view>
-			</view>
-		</li>
+			</li>
+		</view>
 	</view>
 </template>
 
@@ -71,15 +81,12 @@
 	.tt {
 		width: 350px;
 	}
-	
+
 	.rooms {
 		height: 300px;
 	}
-	
+
 	.rroom {
 		height: 330px;
 	}
-	
-	
-
 </style>

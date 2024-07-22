@@ -47,7 +47,7 @@
 	}
 	
 	view {
-		margin-top: 2px;
+		margin: 2px;
 	}
 
 	.left {

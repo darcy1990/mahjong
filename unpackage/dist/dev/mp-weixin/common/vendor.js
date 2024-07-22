@@ -7949,6 +7949,12 @@ const pages = [
     style: {
       navigationBarTitleText: "对局记录"
     }
+  },
+  {
+    path: "pages/my/records",
+    style: {
+      navigationBarTitleText: "对局记录"
+    }
   }
 ];
 const tabBar = {
@@ -7966,7 +7972,7 @@ const tabBar = {
       text: "预约"
     },
     {
-      pagePath: "pages/reserve/games",
+      pagePath: "pages/rank/rank",
       text: "排行"
     },
     {

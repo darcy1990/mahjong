@@ -11,6 +11,7 @@ if (!Math) {
   "./pages/reserve/available.js";
   "./pages/reserve/overtime.js";
   "./pages/reserve/games.js";
+  "./pages/my/records.js";
 }
 const _sfc_main = {
   onLaunch: function() {

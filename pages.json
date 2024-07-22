@@ -44,6 +44,11 @@
 			"style": {
 				"navigationBarTitleText": "对局记录"
 			}
+		},{
+			"path": "pages/my/records",
+			"style": {
+				"navigationBarTitleText": "对局记录"
+			}
 		}],
 	"tabBar": {
 		"color": "#7A7E83",
@@ -57,7 +62,7 @@
 			"pagePath": "pages/reserve/reserve",
 			"text": "预约"
 		}, {
-			"pagePath": "pages/reserve/games",
+			"pagePath": "pages/rank/rank",
 			"text": "排行"
 		}, {
 			"pagePath": "pages/my/my",

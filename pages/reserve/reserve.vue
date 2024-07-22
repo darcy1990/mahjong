@@ -18,15 +18,27 @@
 
 		<view>
 			<div class="grid-container">
-				<div class="grid-item"><button>查看可用时间段</button></div>
+				<div class="grid-item">
+					<navigator url="/pages/reserve/available" open-type="redirect" hover-class="other-navigator-hover">
+						<button>查看可用时间段</button>
+					</navigator>
+				</div>
 				<div class="grid-item"><button>通宵战</button></div>
 				<div class="grid-item"><text class="middle">价格：150 元</text></div>
 				<div class="grid-item"><button class="middle">价格说明</button></div>
 				<div class="grid-item"><button>支付</button></div>
-				<div class="grid-item"><button>加时</button></div>
+				<div class="grid-item">
+					<navigator url="/pages/reserve/overtime" open-type="redirect" hover-class="other-navigator-hover">
+						<button>加时</button>
+					</navigator>
+				</div>
 				<div class="grid-item"><button>锁定房间</button></div>
 				<div class="grid-item"><button>解锁房间</button></div>
-				<div class="grid-item"><button>上传/查看对局记录</button></div>
+				<div class="grid-item">
+					<navigator url="/pages/reserve/games" open-type="redirect" hover-class="other-navigator-hover">
+						<button>上传/查看对局记录</button>
+					</navigator>
+				</div>
 				<div class="grid-item"><button>申请退款</button></div>
 			</div>
 		</view>

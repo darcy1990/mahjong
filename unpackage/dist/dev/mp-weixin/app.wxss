@@ -2374,7 +2374,7 @@ button {
   border: none;
 }
 view {
-  margin-top: 2px;
+  margin: 2px;
 }
 .left {
   margin-left: 10px;
