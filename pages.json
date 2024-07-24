@@ -62,7 +62,7 @@
 			"pagePath": "pages/reserve/reserve",
 			"text": "预约"
 		}, {
-			"pagePath": "pages/rank/rank",
+			"pagePath": "pages/bind",
 			"text": "排行"
 		}, {
 			"pagePath": "pages/my/my",

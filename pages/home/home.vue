@@ -5,14 +5,14 @@
 		<view class="rooms">
 			<view>
 				<text class="middle">当前正在进行的组局</text>
-				<navigator url="/pages/current?title=redirect" open-type="redirect" hover-class="other-navigator-hover">
-					<button class="middle left"> >> </button>
+				<navigator class="middle left" url="/pages/current?title=redirect" open-type="redirect" hover-class="other-navigator-hover">
+					<text class="green"> >> </text>
 				</navigator>
 			</view>
 			<view v-for="room in rooms">
 				<text class="middle">{{ room }}</text>
-				<navigator url="/pages/reserve/reserve" open-type="switchTab" hover-class="other-navigator-hover">
-					<button class="middle left">加入</button>
+				<navigator class="middle left" url="/pages/reserve/reserve" open-type="switchTab" hover-class="other-navigator-hover">
+					<text class="green"> 加入 </text>
 				</navigator>
 			</view>
 		</view>
@@ -28,7 +28,7 @@
 							<button>预约</button>
 						</navigator>
 						<navigator url="/pages/reserve/available" open-type="redirect" hover-class="other-navigator-hover">
-							<button class="left">查看可用时间段</button>
+							<button class="left green">查看可用时间段</button>
 						</navigator>
 					</view>
 				</view>

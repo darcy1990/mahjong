@@ -8,16 +8,16 @@
 .uni-stat__select {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 65%;
   flex: 1;
   box-sizing: border-box;
 }
 .uni-stat-box {
-  width: 100%;
+  width: 65%;
   flex: 1;
 }
 .uni-stat__actived {
-  width: 100%;
+  width: 65%;
   flex: 1;
 }
 .uni-label-text {
@@ -41,7 +41,7 @@
   flex-direction: row;
   align-items: center;
   border-bottom: solid 1px #e5e5e5;
-  width: 100%;
+  width: 65%;
   flex: 1;
   height: 35px;
 }
@@ -77,7 +77,7 @@
   box-sizing: border-box;
   position: absolute;
   left: 0;
-  width: 100%;
+  width: 65%;
   background-color: #FFFFFF;
   border: 1px solid #EBEEF5;
   border-radius: 6px;
@@ -155,7 +155,7 @@
   border-top-color: #fff;
 }
 .uni-select__input-text {
-  width: 100%;
+  width: 65%;
   color: #3a3a3a;
   white-space: nowrap;
   text-overflow: ellipsis;

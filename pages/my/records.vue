@@ -8,7 +8,7 @@
 				<view style="margin: 20px;">
 					<div class="grid-container">
 						<div class="grid-item">{{record.first}}</div>
-						<div class="grid-item">{{record.second}}</div>
+						<div class="grid-item green">{{record.second}}</div>
 						<div class="grid-item">{{record.third}}</div>
 						<div class="grid-item">{{record.fourth}}</div>
 					</div>

@@ -330,6 +330,7 @@
 	$uni-main-color: #333 !default;
 	$uni-secondary-color: #909399 !default;
 	$uni-border-3: #e5e5e5;
+	$width: 65%;
 
 	/* #ifndef APP-NVUE */
 	@media screen and (max-width: 500px) {
@@ -346,18 +347,18 @@
 		/* #ifdef H5 */
 		cursor: pointer;
 		/* #endif */
-		width: 100%;
+		width: $width;
 		flex: 1;
 		box-sizing: border-box;
 	}
 
 	.uni-stat-box {
-		width: 100%;
+		width: $width;
 		flex: 1;
 	}
 
 	.uni-stat__actived {
-		width: 100%;
+		width: $width;
 		flex: 1;
 		// outline: 1px solid #2979ff;
 	}
@@ -385,7 +386,7 @@
 		flex-direction: row;
 		align-items: center;
 		border-bottom: solid 1px $uni-border-3;
-		width: 100%;
+		width: $width;
 		flex: 1;
 		height: 35px;
 
@@ -432,7 +433,7 @@
 		/* #endif */
 		position: absolute;
 		left: 0;
-		width: 100%;
+		width: $width;
 		background-color: #FFFFFF;
 		border: 1px solid #EBEEF5;
 		border-radius: 6px;
@@ -538,7 +539,7 @@
 
 	.uni-select__input-text {
 		// width: 280px;
-		width: 100%;
+		width: $width;
 		color: $uni-main-color;
 		white-space: nowrap;
 		text-overflow: ellipsis;

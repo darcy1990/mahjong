@@ -2,7 +2,7 @@
 	<view class="container">
 		<view>
 			房间：
-			<uni-data-select style="width: 80%;">金之间</uni-data-select>
+			<uni-data-select style="width: 50%;">金之间</uni-data-select>
 		</view>
 		<view>
 			<view>
@@ -11,7 +11,7 @@
 				~
 				<uni-datetime-picker></uni-datetime-picker>
 			</view>
-			<view style="margin-bottom: 10px;">
+			<view style="margin-bottom: 10px;" class="green">
 				存在相同时段组局，点击加入
 			</view>
 		</view>
@@ -20,12 +20,12 @@
 			<div class="grid-container">
 				<div class="grid-item">
 					<navigator url="/pages/reserve/available" open-type="redirect" hover-class="other-navigator-hover">
-						<button>查看可用时间段</button>
+						<button class="green">查看可用时间段</button>
 					</navigator>
 				</div>
-				<div class="grid-item"><button>通宵战</button></div>
+				<div class="grid-item"><button class="green">通宵战</button></div>
 				<div class="grid-item"><text class="middle">价格：150 元</text></div>
-				<div class="grid-item"><button class="middle">价格说明</button></div>
+				<div class="grid-item"><text class="middle green">价格说明</text></div>
 				<div class="grid-item"><button>支付</button></div>
 				<div class="grid-item">
 					<navigator url="/pages/reserve/overtime" open-type="redirect" hover-class="other-navigator-hover">

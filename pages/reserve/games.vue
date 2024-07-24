@@ -80,8 +80,8 @@
 		</view>
 
 		<view style="margin-top: 10px;">
-			<button>添加新的对局</button>
-			<button class="left">上传役满留念</button>
+			<button class="green">添加新的对局</button>
+			<button class="left green">上传役满留念</button>
 		</view>
 	</view>
 </template>

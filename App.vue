@@ -30,6 +30,10 @@
 		color: #333;
 		padding: 10px;
 	}
+	
+	view {
+		margin: 2px;
+	}
 
 	.container {
 		font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
@@ -43,12 +47,18 @@
 		font-size: 12px;
 		line-height: 2.3;
 		padding: 0 1.34em;
-		border:none 
+		border:none;
+		outline: none;
 	}
 	
-	view {
-		margin: 2px;
+	navigator {
+		display: inline;
 	}
+	
+	.green {
+		font-size: 12px;
+		color:green;
+	}	
 
 	.left {
 		margin-left: 10px;

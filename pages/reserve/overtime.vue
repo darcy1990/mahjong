@@ -23,7 +23,7 @@
 		</view>
 		<view style="margin-bottom: 10px;">
 			<text class="middle">价格：150 元</text>
-			<button class="middle">价格说明</button>
+			<text class="left middle green">价格说明</text>
 		</view>
 		<view>
 			<button>支付</button>

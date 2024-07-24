@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view>
-			<navigator open-type="navigateBack" hover-class="navigator-hover">
+			<navigator open-type="navigateBack" delta="2" hover-class="navigator-hover">
 				<button>返回</button>
 			</navigator>
 		</view>
@@ -12,7 +12,7 @@
 			<view v-for="room in rooms">
 				<view style="margin: 10px;">
 					<text class="middle">{{ room }}</text>
-					<button class="middle left">加入</button>
+					<text class="middle left green"> 加入 </text>
 				</view>
 			</view>
 		</view>
@@ -31,10 +31,9 @@
 		}
 	}
 </script>
+	
+<style>
 	.navigator-hover {
 	    color: #666;
 	  }
-<style>
-
-
 </style>

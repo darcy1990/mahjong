@@ -23,7 +23,7 @@
 				<div class="grid-item">00:00 ~ 01:00</div>
 			</div>
 		</view>
-		<view style="margin-bottom: 10px;">
+		<view style="margin-bottom: 10px;" class="green">
 			灰色为不可用时段
 		</view>
 	</view>

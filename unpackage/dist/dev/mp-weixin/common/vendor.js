@@ -7972,7 +7972,7 @@ const tabBar = {
       text: "预约"
     },
     {
-      pagePath: "pages/rank/rank",
+      pagePath: "pages/bind",
       text: "排行"
     },
     {

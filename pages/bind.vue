@@ -6,7 +6,7 @@
 				<view >
 					<input type="text" class="phone center"></input>
 				</view>
-				<view class="center" >没有绑定公式战，直接跳过</view>
+				<view class="center green" >没有绑定公式战，直接跳过</view>
 			</view>
 		</view>
 		<view class="center" >
