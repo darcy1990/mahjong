@@ -1,8 +1,7 @@
 <script>
 	export default {
-		onLaunch: function() {
-			console.warn('当前组件仅支持 uni_modules 目录结构 ，请升级 HBuilderX 到 3.1.0 版本以上！')
-			console.log('App Launch')
+		onLaunch: async function() {
+			console.log('App Launch');
 		},
 		onShow: function() {
 			console.log('App Show')
@@ -30,7 +29,7 @@
 		color: #333;
 		padding: 10px;
 	}
-	
+
 	view {
 		margin: 2px;
 	}
@@ -47,18 +46,18 @@
 		font-size: 12px;
 		line-height: 2.3;
 		padding: 0 1.34em;
-		border:none;
+		border: none;
 		outline: none;
 	}
-	
+
 	navigator {
 		display: inline;
 	}
-	
+
 	.green {
 		font-size: 12px;
-		color:green;
-	}	
+		color: green;
+	}
 
 	.left {
 		margin-left: 10px;

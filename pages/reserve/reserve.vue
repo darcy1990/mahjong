@@ -1,8 +1,8 @@
 <template>
 	<view class="container">
 		<view>
-			房间：
-			<uni-data-select style="width: 50%;">金之间</uni-data-select>
+			<text >房间：:</text>
+			<uni-data-select >金之间</uni-data-select>
 		</view>
 		<view>
 			<view>
