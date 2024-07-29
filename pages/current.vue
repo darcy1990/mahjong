@@ -1,10 +1,5 @@
 <template>
 	<view class="container">
-		<view>
-			<navigator open-type="navigateBack" delta="2" hover-class="navigator-hover">
-				<button>返回</button>
-			</navigator>
-		</view>
 		<view class="rooms">
 			<view style="margin: 20px;">
 				<text class="middle">当前正在进行的组局</text>
@@ -12,11 +7,14 @@
 			<view v-for="room in rooms">
 				<view style="margin: 10px;">
 					<text class="middle">{{ room }}</text>
-					<text class="middle left green"> 加入 </text>
+					<navigator class="middle left" url="/pages/reserve/reserve" open-type="switchTab" hover-class="other-navigator-hover">
+						<text class="green"> 加入 </text>
+					</navigator>
 				</view>
 			</view>
 		</view>
 	</view>
+		
 </template>
 
 <script>
@@ -31,9 +29,9 @@
 		}
 	}
 </script>
-	
+
 <style>
 	.navigator-hover {
-	    color: #666;
-	  }
+		color: #666;
+	}
 </style>

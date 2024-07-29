@@ -30,22 +30,22 @@
 			"navigationBarTitleText": "当前预约"
 		}
 	}, {
-		"path": "pages/reserve/available",
+		"path": "pages/available",
 		"style": {
 			"navigationBarTitleText": "可用时段"
 		}
 	}, {
-		"path": "pages/reserve/overtime",
+		"path": "pages/overtime",
 		"style": {
 			"navigationBarTitleText": "加时"
 		}
 	}, {
-		"path": "pages/reserve/games",
+		"path": "pages/games",
 		"style": {
 			"navigationBarTitleText": "对局记录"
 		}
 	}, {
-		"path": "pages/my/records",
+		"path": "pages/records",
 		"style": {
 			"navigationBarTitleText": "对局记录"
 		}

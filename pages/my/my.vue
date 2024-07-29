@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view>
-			<image src="../../static/rooms/room2.png" class="im middle"></image>
+			<image src="../../static/head.png" class="im middle"></image>
 			<text class="middle" style="margin-left: 20px;">Marqueezzzz</text>
 		</view>
 		<view style="margin: 7px;">
@@ -10,12 +10,12 @@
 		<view>
 			<div class="grid-container">
 				<div class="grid-item">
-					<navigator url="/pages/current" open-type="redirect" hover-class="other-navigator-hover">
+					<navigator url="/pages/current"  hover-class="other-navigator-hover">
 						<button>我的预约</button>
 					</navigator>
 				</div>
 				<div class="grid-item">
-					<navigator url="/pages/my/records" open-type="redirect" hover-class="other-navigator-hover">
+					<navigator url="/pages/records"  hover-class="other-navigator-hover">
 						<button>我的对局</button>
 					</navigator>
 				</div>

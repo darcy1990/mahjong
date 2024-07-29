@@ -330,7 +330,7 @@
 	$uni-main-color: #333 !default;
 	$uni-secondary-color: #909399 !default;
 	$uni-border-3: #e5e5e5;
-	$width: 65%;
+	$width: 100%;
 
 	/* #ifndef APP-NVUE */
 	@media screen and (max-width: 500px) {

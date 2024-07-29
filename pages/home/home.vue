@@ -5,7 +5,7 @@
 		<view class="rooms">
 			<view>
 				<text class="middle">当前正在进行的组局</text>
-				<navigator class="middle left" url="/pages/current?title=redirect" open-type="redirect" hover-class="other-navigator-hover">
+				<navigator class="middle left" url="/pages/current?title=redirect" hover-class="other-navigator-hover">
 					<text class="green"> >> </text>
 				</navigator>
 			</view>
@@ -27,7 +27,7 @@
 						<navigator url="/pages/reserve/reserve" open-type="switchTab" hover-class="other-navigator-hover">
 							<button>预约</button>
 						</navigator>
-						<navigator url="/pages/reserve/available" open-type="redirect" hover-class="other-navigator-hover">
+						<navigator url="/pages/available" hover-class="other-navigator-hover">
 							<button class="left green">查看可用时间段</button>
 						</navigator>
 					</view>
