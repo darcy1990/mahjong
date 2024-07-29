@@ -49,6 +49,11 @@
 		"style": {
 			"navigationBarTitleText": "对局记录"
 		}
+	},{
+		"path": "pages/chatroom/chatroom",
+		"style": {
+			"navigationBarTitleText": "聊天室"
+		}
 	}],
 	"tabBar": {
 		"color": "#7A7E83",

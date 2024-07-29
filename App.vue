@@ -17,6 +17,23 @@
 	@import '@/uni_modules/uni-scss/index.scss';
 	/* #ifndef APP-NVUE */
 	@import '@/static/customicons.css';
+	
+	/*每个页面公共css */
+	/*  #ifdef  H5  */
+	*{
+	  font-family: "HanHei SC",PingHei,"PingFang SC","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;;
+	  font-style: normal;
+	  font-weight: normal;
+	}
+	/*  #endif  */
+	/* 解决头条小程序组件内引入字体不生效的问题 */
+	/* #ifdef MP-TOUTIAO */
+	@font-face {
+	  font-family: uniicons;
+	  src: url('/static/uni.ttf');
+	}
+	
+	/* #endif */
 
 	// 设置整个项目的背景色
 	page {

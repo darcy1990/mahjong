@@ -7,7 +7,7 @@
 		<view style="margin: 7px;">
 			<text class="middle">信用评分：90</text>
 		</view>
-		<view>
+		<view style="margin-top: 80px;">
 			<div class="grid-container">
 				<div class="grid-item">
 					<navigator url="/pages/current"  hover-class="other-navigator-hover">
