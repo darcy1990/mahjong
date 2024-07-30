@@ -75,6 +75,11 @@
 		font-size: 12px;
 		color: green;
 	}
+	
+	.red {
+		font-size: 12px;
+		color: red;
+	}
 
 	.left {
 		margin-left: 10px;
@@ -85,14 +90,14 @@
 	}
 	
 	.bg1 {
-	    border-radius: 10px;
+	    border-radius: 8px;
 		background-color: gainsboro;
 	    padding: 5px;
 		margin-bottom: 10px;
 	}
 	
 	.bg2 {
-	    border-radius: 10px;
+	    border-radius: 8px;
 		background-color: lightgrey;
 	    padding: 5px;
 		margin-bottom: 10px;

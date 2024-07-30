@@ -7,10 +7,10 @@
 			<uni-table>
 				<!-- 表头行 -->
 				<uni-tr>
-					<uni-th width="50px">A</uni-th>
-					<uni-th width="50px">B</uni-th>
-					<uni-th width="50px">C</uni-th>
-					<uni-th width="50px">D</uni-th>
+					<uni-th width="50px">小林刚</uni-th>
+					<uni-th width="50px">优酱</uni-th>
+					<uni-th width="50px">太太</uni-th>
+					<uni-th width="50px">高宫</uni-th>
 				</uni-tr>
 				<!-- 表格数据行 -->
 				<uni-tr>
@@ -45,10 +45,10 @@
 			<uni-table>
 				<!-- 表头行 -->
 				<uni-tr>
-					<uni-th width="50px">A</uni-th>
-					<uni-th width="50px">B</uni-th>
-					<uni-th width="50px">C</uni-th>
-					<uni-th width="50px">D</uni-th>
+					<uni-th width="50px">小林刚</uni-th>
+					<uni-th width="50px">优酱</uni-th>
+					<uni-th width="50px">太太</uni-th>
+					<uni-th width="50px">高宫</uni-th>
 				</uni-tr>
 				<!-- 表格数据行 -->
 				<uni-tr>
@@ -100,5 +100,7 @@
 </script>
 
 <style>
-
+ .uni-table {
+	 background-color: lightgray;
+ }
 </style>

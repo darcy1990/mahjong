@@ -226,7 +226,7 @@
     const roomId = currentRoom.value.roomId;
     goEasy.pubsub.history({
       channel: roomId, //必需项
-      limit: 10, //可选项，返回的消息条数
+      limit: 50, //可选项，返回的消息条数
       onSuccess: function (response) {
         currentRoom.value.messages = [];
         response.content.messages.map(message => {

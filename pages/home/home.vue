@@ -25,7 +25,7 @@
 				<li v-for="rroom in rrooms">
 					<view class="rroom">
 						<view>{{ rroom.name }}</view>
-						<image src="../../static/rooms/room2.png" class="im"></image>
+						<image src="../../static/rooms/tangdao.png" class="im" mode="aspectFill"></image>
 						<view>{{ rroom.desc }}</view>
 						<view>
 							<navigator url="/pages/reserve/reserve" open-type="switchTab"
@@ -52,17 +52,17 @@
 				rooms: ['金之间, 13:00 ~ 18:00', '金之间, 13:00 ~ 18:00', '金之间, 13:00 ~ 18:00'],
 				rrooms: [{
 						"name": "金之间",
-						"img": "../../static/rooms/room1.png",
+						"img": "../../static/rooms/tangdao.png",
 						"desc": "大洋化学，4口，1层"
 					},
 					{
 						"name": "玉之间",
-						"img": "../../static/rooms/room1.png",
+						"img": "../../static/rooms/tangdao.png",
 						"desc": "大洋化学，4口，1层"
 					},
 					{
 						"name": "铜之间",
-						"img": "../../static/rooms/room1.png",
+						"img": "../../static/rooms/tangdao.png",
 						"desc": "大洋化学，4口，1层"
 					}
 				]

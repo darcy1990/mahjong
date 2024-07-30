@@ -55,30 +55,30 @@
 		<view class="bg1">
 			<view>
 				<text>牌搭子</text>
-				<text @click="chatroom" style="margin-left: 40px; font-size: 15px; color: green;">聊天室</text>
+				<text @click="chatroom" style="margin-left: 40px; font-size: 14px; color: green;">进入聊天室</text>
 			</view>
 			<view style="margin-top: 10px;">
 				<div class="grid-container2">
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im"></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill"></image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im"></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill"></image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im"></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" ></image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im"></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" ></image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im"></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" ></image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im"></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" ></image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im"></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" ></image>
 					</div>
 					<div class="grid-item">
 						<image src="../../static/head.png" class="im"></image>
@@ -154,7 +154,7 @@
 					roomName: "金之间",
 					userId: (Math.random() * 1000).toString(),
 					nickname: "张三",
-					avatar: "../../static/rooms/room1.png"
+					avatar: "../../static/head.png"
 				};
 
 				uni.navigateTo({
