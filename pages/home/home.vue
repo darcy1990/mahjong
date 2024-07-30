@@ -1,8 +1,10 @@
 <template>
 	<view class="container">
-		<view>修罗雀庄</view>
-		<view class="notice">公告 {{notice}}</view>
-		<view class="rooms">
+		<view class="bg1">
+			<view>修罗雀庄</view>
+			<view class="notice">公告 {{notice}}</view>
+		</view>
+		<view class="rooms bg2">
 			<view>
 				<text class="middle">当前正在进行的组局</text>
 				<navigator class="middle left" url="/pages/current?title=redirect" hover-class="other-navigator-hover">
@@ -11,28 +13,32 @@
 			</view>
 			<view v-for="room in rooms">
 				<text class="middle">{{ room }}</text>
-				<navigator class="middle left" url="/pages/reserve/reserve" open-type="switchTab" hover-class="other-navigator-hover">
+				<navigator class="middle left" url="/pages/reserve/reserve" open-type="switchTab"
+					hover-class="other-navigator-hover">
 					<text class="green"> 加入 </text>
 				</navigator>
 			</view>
 		</view>
-		<view>房间列表</view>
-		<view>
-			<li v-for="rroom in rrooms">
-				<view class="rroom">
-					<view>{{ rroom.name }}</view>
-					<image src="../../static/rooms/room2.png" class="im"></image>
-					<view>{{ rroom.desc }}</view>
-					<view>
-						<navigator url="/pages/reserve/reserve" open-type="switchTab" hover-class="other-navigator-hover">
-							<button>预约</button>
-						</navigator>
-						<navigator url="/pages/available" hover-class="other-navigator-hover">
-							<button class="left green">查看可用时间段</button>
-						</navigator>
+		<view class="bg1">
+			<view>房间列表</view>
+			<view>
+				<li v-for="rroom in rrooms">
+					<view class="rroom">
+						<view>{{ rroom.name }}</view>
+						<image src="../../static/rooms/room2.png" class="im"></image>
+						<view>{{ rroom.desc }}</view>
+						<view>
+							<navigator url="/pages/reserve/reserve" open-type="switchTab"
+								hover-class="other-navigator-hover">
+								<button>预约</button>
+							</navigator>
+							<navigator url="/pages/available" hover-class="other-navigator-hover">
+								<button class="left green">查看可用时间段</button>
+							</navigator>
+						</view>
 					</view>
-				</view>
-			</li>
+				</li>
+			</view>
 		</view>
 	</view>
 </template>

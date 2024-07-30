@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		<view class="rooms">
+		<view class="rooms bg1">
 			<view style="margin: 20px;">
 				<text class="middle">当前正在进行的组局</text>
 			</view>

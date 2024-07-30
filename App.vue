@@ -53,7 +53,7 @@
 
 	.container {
 		font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-		padding: 20px;
+		padding: 10px;
 		font-size: 13px;
 		line-height: 24px;
 	}
@@ -82,5 +82,19 @@
 
 	.middle {
 		vertical-align: middle;
+	}
+	
+	.bg1 {
+	    border-radius: 10px;
+		background-color: gainsboro;
+	    padding: 5px;
+		margin-bottom: 10px;
+	}
+	
+	.bg2 {
+	    border-radius: 10px;
+		background-color: lightgrey;
+	    padding: 5px;
+		margin-bottom: 10px;
 	}
 </style>

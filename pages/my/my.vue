@@ -1,21 +1,23 @@
 <template>
 	<view class="container">
-		<view>
-			<image src="../../static/head.png" class="im middle"></image>
-			<text class="middle" style="margin-left: 20px;">Marqueezzzz</text>
+		<view class="bg1">
+			<view>
+				<image src="../../static/head.png" class="im middle"></image>
+				<text class="middle" style="margin-left: 20px;">Marqueezzzz</text>
+			</view>
+			<view style="margin: 7px;">
+				<text class="middle">信用评分：90</text>
+			</view>
 		</view>
-		<view style="margin: 7px;">
-			<text class="middle">信用评分：90</text>
-		</view>
-		<view style="margin-top: 80px;">
+		<view class="bg2">
 			<div class="grid-container">
 				<div class="grid-item">
-					<navigator url="/pages/current"  hover-class="other-navigator-hover">
+					<navigator url="/pages/current" hover-class="other-navigator-hover">
 						<button>我的预约</button>
 					</navigator>
 				</div>
 				<div class="grid-item">
-					<navigator url="/pages/records"  hover-class="other-navigator-hover">
+					<navigator url="/pages/records" hover-class="other-navigator-hover">
 						<button>我的对局</button>
 					</navigator>
 				</div>

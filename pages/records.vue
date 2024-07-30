@@ -5,7 +5,7 @@
 		</view>
 		<view>
 			<li v-for="record in records">
-				<view style="margin: 20px;">
+				<view class="bg1">
 					<div class="grid-container">
 						<div class="grid-item">{{record.first}}</div>
 						<div class="grid-item green">{{record.second}}</div>
