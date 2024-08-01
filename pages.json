@@ -60,18 +60,27 @@
 		"selectedColor": "#3cc51f",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
+		"iconWidth": "10px",
 		"list": [{
 			"pagePath": "pages/home/home",
-			"text": "首页"
+			"text": "首页",
+			"iconPath": "static/tab/home.png",
+			"selectedIconPath": "static/tab/home.png"
 		}, {
 			"pagePath": "pages/reserve/reserve",
-			"text": "预约"
+			"text": "预约",
+			"iconPath": "static/tab/reserve.png",
+			"selectedIconPath": "static/tab/reserve.png"
 		}, {
 			"pagePath": "pages/bind",
-			"text": "排行"
+			"text": "排行",
+			"iconPath": "static/tab/rank.png",
+			"selectedIconPath": "static/tab/rank.png"
 		}, {
 			"pagePath": "pages/my/my",
-			"text": "我的"
+			"text": "我的",
+			"iconPath": "static/tab/my.png",
+			"selectedIconPath": "static/tab/my.png"
 		}]
 	},
 	"globalStyle": {

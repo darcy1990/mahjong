@@ -1,7 +1,3 @@
-
-
-
-
 import App from './App'
 import GoEasy from '@/uni_modules/GoEasy-Chatroom/js_sdk/goeasy-2.12.4.esm.min.js'
 

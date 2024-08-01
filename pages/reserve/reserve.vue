@@ -2,17 +2,17 @@
 	<view class="container">
 		<view class="bg1">
 			<view>
-				<div class="flex-container">
-					<div class="flex-item middle" style="width: 12%;"><text>房间：</text></div>
-					<div class="flex-item middle" style="width: 40%;">
+				<div class="flex-container2">
+					<div class="flex-item2 middle" style="width: 12%;"><text>房间：</text></div>
+					<div class="flex-item2 middle" style="width: 40%;">
 						<uni-data-select v-model="value" :localdata="range" @change="change"></uni-data-select>
 					</div>
 				</div>
 			</view>
 			<view>
-				<div class="flex-container">
-					<div class="flex-item" style="width: 12%;">日期：</div>
-					<div class="flex-item middle" style="width: 80%;">
+				<div class="flex-container2">
+					<div class="flex-item2" style="width: 12%;">日期：</div>
+					<div class="flex-item2 middle" style="width: 80%;">
 						<uni-datetime-picker></uni-datetime-picker>~<uni-datetime-picker></uni-datetime-picker>
 					</div>
 				</div>
@@ -24,10 +24,15 @@
 				<div class="grid-container">
 					<div class="grid-item">
 						<navigator url="/pages/available" hover-class="other-navigator-hover">
-							<button class="green">查看可用时间段</button>
+							<image class="icon" src="../../static/svg/available.svg" style="vertical-align: middle;">
+							</image>
+							<text> 查看可用时段</text>
 						</navigator>
 					</div>
-					<div class="grid-item"><button class="green">通宵战</button></div>
+					<div class="grid-item">
+						<image class="icon" src="../../static/svg/moon.svg" style="vertical-align: middle;"></image>
+						<text> 设定通宵战</text>
+					</div>
 				</div>
 			</view>
 		</view>
@@ -36,49 +41,139 @@
 			<div class="grid-container">
 				<div class="grid-item"><text class="middle">价格：150 元</text></div>
 				<div class="grid-item"><text class="middle green">价格说明</text></div>
-				<div class="grid-item"><button>支付</button></div>
-				<div class="grid-item">
-					<navigator url="/pages/overtime" hover-class="other-navigator-hover">
-						<button>加时</button>
-					</navigator>
-				</div>
-				<div class="grid-item"><button>锁定房间</button></div>
-				<div class="grid-item"><button>解锁房间</button></div>
-				<div class="grid-item">
-					<navigator url="/pages/games" hover-class="other-navigator-hover">
-						<button>上传/查看对局记录</button>
-					</navigator>
-				</div>
-				<div class="grid-item"><button>申请退款</button></div>
 			</div>
 		</view>
 		<view class="bg1">
-			<view>
-				<text>牌搭子</text>
-				<text @click="chatroom" style="margin-left: 40px; font-size: 14px; color: green;">进入聊天室</text>
+			<div class="flex-container">
+				<div class="flex-item" style="width: 30%;">
+					<view>
+						<navigator url="/pages/current" hover-class="other-navigator-hover">
+							<div class="flex-container" style="flex-direction:column">
+								<div class="flex-item">
+									<image class="icon" src="../../static/svg/pay.svg"></image>
+								</div>
+								<div class="flex-item">
+									<text>支付</text>
+								</div>
+							</div>
+						</navigator>
+					</view>
+				</div>
+				<div class="flex-item" style="width: 30%;">
+					<view>
+						<navigator url="/pages/overtime" hover-class="other-navigator-hover">
+							<div class="flex-container" style="flex-direction:column">
+								<div class="flex-item">
+									<image class="icon" src="../../static/svg/overtime.svg"></image>
+								</div>
+								<div class="flex-item">
+									<text>加时</text>
+								</div>
+							</div>
+						</navigator>
+					</view>
+				</div>
+				<div class="flex-item" style="width: 30%;">
+					<view>
+						<navigator url="/pages/current" hover-class="other-navigator-hover">
+							<div class="flex-container" style="flex-direction:column">
+								<div class="flex-item">
+									<image class="icon" src="../../static/svg/lock.svg"></image>
+								</div>
+								<div class="flex-item">
+									<text>锁定房间</text>
+								</div>
+							</div>
+						</navigator>
+					</view>
+				</div>
+			</div>
+			<div class="flex-container">	
+				<div class="flex-item" style="width: 30%;">
+					<view>
+						<navigator url="/pages/records" hover-class="other-navigator-hover">
+							<div class="flex-container" style="flex-direction:column">
+								<div class="flex-item">
+									<image class="icon" src="../../static/svg/unlock.svg"></image>
+								</div>
+								<div class="flex-item">
+									<text>解锁房间</text>
+								</div>
+							</div>
+						</navigator>
+					</view>
+				</div>
+				<div class="flex-item" style="width: 30%;">
+					<view>
+						<navigator url="/pages/games" hover-class="other-navigator-hover">
+							<div class="flex-container" style="flex-direction:column">
+								<div class="flex-item">
+									<image class="icon" src="../../static/svg/records.svg"></image>
+								</div>
+								<div class="flex-item">
+									<text>对局记录</text>
+								</div>
+							</div>
+						</navigator>
+					</view>
+				</div>
+				<div class="flex-item" style="width: 30%;">
+					<view>
+						<navigator url="/pages/records" hover-class="other-navigator-hover">
+							<div class="flex-container" style="flex-direction:column">
+								<div class="flex-item">
+									<image class="icon" src="../../static/svg/refund.svg"></image>
+								</div>
+								<div class="flex-item">
+									<text>退款</text>
+								</div>
+							</div>
+						</navigator>
+					</view>
+				</div>
+			</div>
+		</view>
+		<view class="bg1">
+			<view style="height: 30px;">
+				<view style="position: relative;">
+					<view style="position: absolute;left: 0;">
+						<image class="icon" src="../../static/svg/partner.svg"></image>
+					</view>
+					<view @click="chatroom" style="position: absolute;right: 0;">
+						<image class="icon" src="../../static/svg/room.svg" style="vertical-align: middle;"></image>
+						<text> 加入群聊</text>
+					</view>
+				</view>
 			</view>
 			<view style="margin-top: 10px;">
 				<div class="grid-container2">
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im" mode="aspectFill"></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" style="border-radius: 10px;">
+						</image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im" mode="aspectFill"></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" style="border-radius: 10px;">
+						</image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im" mode="aspectFill" ></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" style="border-radius: 10px;">
+						</image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im" mode="aspectFill" ></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" style="border-radius: 10px;">
+						</image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im" mode="aspectFill" ></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" style="border-radius: 10px;">
+						</image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im" mode="aspectFill" ></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" style="border-radius: 10px;">
+						</image>
 					</div>
 					<div class="grid-item">
-						<image src="../../static/head.png" class="im" mode="aspectFill" ></image>
+						<image src="../../static/head.png" class="im" mode="aspectFill" style="border-radius: 10px;">
+						</image>
 					</div>
 					<div class="grid-item">
 						<image src="../../static/head.png" class="im"></image>
@@ -90,7 +185,7 @@
 			</view>
 		</view>
 		<view class="outer bg2">
-			<p>离开房间</p>
+			<text> 离开房间</text>
 		</view>
 
 		<!-- <view style="margin: 10px">
@@ -192,15 +287,24 @@
 		display: -webkit-flex;
 		display: flex;
 		align-items: center;
+		justify-content: flex-start;
 	}
 
-	.flex-item {
+	.flex-container2 {
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+	}
+
+	.flex-item2 {
 		display: flex;
 	}
+
 
 	.outer {
 		display: flex;
 		justify-content: center;
 		/* 水平居中 */
+		margin: 10px;
 	}
 </style>

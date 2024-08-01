@@ -34,6 +34,17 @@
 	}
 	
 	/* #endif */
+	
+	//导航栏字体
+	.uni-page-head .uni-page-head__title{
+		font-size: 10rpx !important;
+	}
+	// tab图标
+	.uni-tabbar .uni-tabbar__icon {
+		width: 10rpx !important;
+	    height: 10rpx !important;
+	}
+
 
 	// 设置整个项目的背景色
 	page {
@@ -52,10 +63,11 @@
 	}
 
 	.container {
-		font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-		padding: 10px;
-		font-size: 13px;
+		font-family:"Microsoft YaHei";
+		font-size: 12px;
 		line-height: 24px;
+		background-color: #f2f2f2;
+		padding: 5px;
 	}
 
 	button {
@@ -73,7 +85,7 @@
 
 	.green {
 		font-size: 12px;
-		color: green;
+		color: grey;
 	}
 	
 	.red {
@@ -91,15 +103,20 @@
 	
 	.bg1 {
 	    border-radius: 8px;
-		background-color: gainsboro;
+		background-color: white;
 	    padding: 5px;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
 	
 	.bg2 {
 	    border-radius: 8px;
-		background-color: lightgrey;
+		background-color: white;
 	    padding: 5px;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
+	}
+	
+	.icon {
+		width: 23px;
+		height: 23px;
 	}
 </style>
