@@ -850,7 +850,7 @@
 		border-radius: 4px;
 		background-color: #fff;
 		color: #666;
-		font-size: 14px;
+		font-size: 12px;
 		flex: 1;
 
 		.icon-calendar {
@@ -896,7 +896,7 @@
 		position: relative;
 		flex: 1;
 		line-height: 35px;
-		font-size: 14px;
+		font-size: 12px;
 		overflow: hidden;
 	}
 

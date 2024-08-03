@@ -372,7 +372,7 @@
 	}
 
 	.uni-select {
-		font-size: 14px;
+		font-size: 12px;
 		border: 1px solid $uni-border-3;
 		box-sizing: border-box;
 		border-radius: 4px;

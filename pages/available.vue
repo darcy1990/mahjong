@@ -1,8 +1,20 @@
 <template>
 	<view class="container">
 		<view>
-			日期：
-			<uni-datetime-picker></uni-datetime-picker>
+			<div class="flex-container2">
+				<div class="flex-item2 middle" style="width: 12%;"><text>房间：</text></div>
+				<div class="flex-item2 middle" style="width: 40%;">
+					<uni-data-select v-model="value" :localdata="range" @change="change"></uni-data-select>
+				</div>
+			</div>
+		</view>
+		<view>
+			<div class="flex-container2">
+				<div class="flex-item2" style="width: 12%;">日期：</div>
+				<div class="flex-item2 middle" style="width: 80%;">
+					<uni-datetime-picker></uni-datetime-picker>
+				</div>
+			</div>
 		</view>
 
 		<view style="margin-top: 10px;">
@@ -47,5 +59,15 @@
 		display: grid;
 		grid-template-columns: 45% 45%;
 		grid-row-gap: 5px;
+	}
+	
+	.flex-container2 {
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+	}
+	
+	.flex-item2 {
+		display: flex;
 	}
 </style>

@@ -1,11 +1,11 @@
 <template>
 	<view class="container">
 		<view>
-			<text class="middle" style="margin-left: 20px;">我的对局</text>
-		</view>
-		<view>
 			<li v-for="record in records">
-				<view class="bg1">
+				<view class="bg1 gradual">
+					<view>
+						<text >2024-08-01</text>
+					</view>
 					<div class="grid-container" style="font-size: 12px;">
 						<div class="grid-item">小林刚：{{record.first}}</div>
 						<div class="grid-item green">优酱：{{record.second}}</div>

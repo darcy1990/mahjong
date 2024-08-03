@@ -1,8 +1,5 @@
 <template>
-	<view class="container">
-		<view>
-			对局记录：
-		</view>
+	<view class="container">           
 		<view>
 			<uni-table>
 				<!-- 表头行 -->

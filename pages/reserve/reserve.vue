@@ -17,23 +17,23 @@
 					</div>
 				</div>
 			</view>
-			<view style="margin-bottom: 10px;" class="green">
-				存在相同时段组局，点击加入
-			</view>
 			<view>
 				<div class="grid-container">
 					<div class="grid-item">
 						<navigator url="/pages/available" hover-class="other-navigator-hover">
-							<image class="icon" src="../../static/svg/available.svg" style="vertical-align: middle;">
+							<image class="micon" src="../../static/svg/available.svg" style="vertical-align: middle;">
 							</image>
 							<text> 查看可用时段</text>
 						</navigator>
 					</div>
 					<div class="grid-item">
-						<image class="icon" src="../../static/svg/moon.svg" style="vertical-align: middle;"></image>
+						<image class="micon" src="../../static/svg/moon.svg" style="vertical-align: middle;"></image>
 						<text> 设定通宵战</text>
 					</div>
 				</div>
+			</view>
+			<view style="margin-bottom: 10px;" class="green">
+				存在相同时段组局，点击加入
 			</view>
 		</view>
 
@@ -75,6 +75,22 @@
 				</div>
 				<div class="flex-item" style="width: 30%;">
 					<view>
+						<navigator url="/pages/records" hover-class="other-navigator-hover">
+							<div class="flex-container" style="flex-direction:column">
+								<div class="flex-item">
+									<image class="icon" src="../../static/svg/refund.svg"></image>
+								</div>
+								<div class="flex-item">
+									<text>退款</text>
+								</div>
+							</div>
+						</navigator>
+					</view>
+				</div>
+			</div>
+			<div class="flex-container">
+				<div class="flex-item" style="width: 30%;">
+					<view>
 						<navigator url="/pages/current" hover-class="other-navigator-hover">
 							<div class="flex-container" style="flex-direction:column">
 								<div class="flex-item">
@@ -87,8 +103,6 @@
 						</navigator>
 					</view>
 				</div>
-			</div>
-			<div class="flex-container">	
 				<div class="flex-item" style="width: 30%;">
 					<view>
 						<navigator url="/pages/records" hover-class="other-navigator-hover">
@@ -112,20 +126,6 @@
 								</div>
 								<div class="flex-item">
 									<text>对局记录</text>
-								</div>
-							</div>
-						</navigator>
-					</view>
-				</div>
-				<div class="flex-item" style="width: 30%;">
-					<view>
-						<navigator url="/pages/records" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
-								<div class="flex-item">
-									<image class="icon" src="../../static/svg/refund.svg"></image>
-								</div>
-								<div class="flex-item">
-									<text>退款</text>
 								</div>
 							</div>
 						</navigator>
@@ -306,5 +306,9 @@
 		justify-content: center;
 		/* 水平居中 */
 		margin: 10px;
+	}
+	
+	.uni-select {
+		font-size: 12px;
 	}
 </style>

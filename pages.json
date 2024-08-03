@@ -61,6 +61,7 @@
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
 		"iconWidth": "10px",
+		"fontSize": "8px",
 		"list": [{
 			"pagePath": "pages/home/home",
 			"text": "首页",

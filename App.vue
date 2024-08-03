@@ -119,4 +119,18 @@
 		width: 23px;
 		height: 23px;
 	}
+	
+	.micon {
+		width: 20px;
+		height: 20px;
+	}
+	
+	.sicon {
+		width: 15px;
+		height: 15px;
+	}
+	
+	.gradual {
+		background-image: linear-gradient(to bottom, white , lightgrey);
+	}
 </style>
