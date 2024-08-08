@@ -21,13 +21,13 @@
 				<div class="grid-container">
 					<div class="grid-item">
 						<navigator url="/pages/available" hover-class="other-navigator-hover">
-							<image class="micon" src="../../static/svg/available.svg" style="vertical-align: middle;">
+							<image class="micon vm" src="../../static/svg/available.svg">
 							</image>
 							<text> 查看可用时段</text>
 						</navigator>
 					</div>
 					<div class="grid-item">
-						<image class="micon" src="../../static/svg/moon.svg" style="vertical-align: middle;"></image>
+						<image class="micon vm" src="../../static/svg/moon.svg"></image>
 						<text> 设定通宵战</text>
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 				<div class="flex-item" style="width: 30%;">
 					<view>
 						<navigator url="/pages/current" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
+							<div class="flex-container fc">
 								<div class="flex-item">
 									<image class="icon" src="../../static/svg/pay.svg"></image>
 								</div>
@@ -62,7 +62,7 @@
 				<div class="flex-item" style="width: 30%;">
 					<view>
 						<navigator url="/pages/overtime" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
+							<div class="flex-container fc">
 								<div class="flex-item">
 									<image class="icon" src="../../static/svg/overtime.svg"></image>
 								</div>
@@ -76,7 +76,7 @@
 				<div class="flex-item" style="width: 30%;">
 					<view>
 						<navigator url="/pages/records" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
+							<div class="flex-container fc">
 								<div class="flex-item">
 									<image class="icon" src="../../static/svg/refund.svg"></image>
 								</div>
@@ -92,7 +92,7 @@
 				<div class="flex-item" style="width: 30%;">
 					<view>
 						<navigator url="/pages/current" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
+							<div class="flex-container fc">
 								<div class="flex-item">
 									<image class="icon" src="../../static/svg/lock.svg"></image>
 								</div>
@@ -106,7 +106,7 @@
 				<div class="flex-item" style="width: 30%;">
 					<view>
 						<navigator url="/pages/records" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
+							<div class="flex-container fc">
 								<div class="flex-item">
 									<image class="icon" src="../../static/svg/unlock.svg"></image>
 								</div>
@@ -120,7 +120,7 @@
 				<div class="flex-item" style="width: 30%;">
 					<view>
 						<navigator url="/pages/games" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
+							<div class="flex-container fc">
 								<div class="flex-item">
 									<image class="icon" src="../../static/svg/records.svg"></image>
 								</div>
@@ -140,7 +140,7 @@
 						<image class="icon" src="../../static/svg/partner.svg"></image>
 					</view>
 					<view @click="chatroom" style="position: absolute;right: 0;">
-						<image class="icon" src="../../static/svg/room.svg" style="vertical-align: middle;"></image>
+						<image class="icon vm" src="../../static/svg/room.svg"></image>
 						<text> 加入群聊</text>
 					</view>
 				</view>
@@ -283,24 +283,6 @@
 		height: 20px;
 	}
 
-	.flex-container {
-		display: -webkit-flex;
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-	}
-
-	.flex-container2 {
-		display: -webkit-flex;
-		display: flex;
-		align-items: center;
-	}
-
-	.flex-item2 {
-		display: flex;
-	}
-
-
 	.outer {
 		display: flex;
 		justify-content: center;
@@ -308,7 +290,5 @@
 		margin: 10px;
 	}
 	
-	.uni-select {
-		font-size: 12px;
-	}
+	
 </style>

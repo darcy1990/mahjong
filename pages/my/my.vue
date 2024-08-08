@@ -14,7 +14,7 @@
 				<div class="flex-item" style="width: 40%;">
 					<view>
 						<navigator url="/pages/current" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
+							<div class="flex-container fc">
 								<div class="flex-item">
 									<image class="icon" src="../../static/svg/reserve.svg"></image>
 								</div>
@@ -28,7 +28,7 @@
 				<div class="flex-item" style="width: 40%;">
 					<view>
 						<navigator url="/pages/records" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
+							<div class="flex-container fc">
 								<div class="flex-item">
 									<image class="icon" src="../../static/svg/records.svg"></image>
 								</div>
@@ -44,7 +44,7 @@
 				<div class="flex-item" style="width: 40%;">
 					<view>
 						<navigator url="/pages/current" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
+							<div class="flex-container fc">
 								<div class="flex-item">
 									<image class="icon" src="../../static/svg/formula.svg"></image>
 								</div>
@@ -58,7 +58,7 @@
 				<div class="flex-item" style="width: 40%;">
 					<view>
 						<navigator url="/pages/records" hover-class="other-navigator-hover">
-							<div class="flex-container" style="flex-direction:column">
+							<div class="flex-container fc">
 								<div class="flex-item">
 									<image class="icon" src="../../static/svg/consult.svg"></image>
 								</div>

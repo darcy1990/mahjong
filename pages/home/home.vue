@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		<view class="bg1">
+		<view class="bg1" style="position: relative;;">
 			<div class="flex-container2">
 				<div class="flex-item2" style="width: 60%;">
 					<image src="../../static/images/xiuluo.jpg" mode="aspectFit "></image>
@@ -12,18 +12,21 @@
 						地址：武汉市xxxxxxxxxxxxx
 					</text>
 				</div>
+				<!-- <div class="gradual" style="position: absolute; top: 0px; width: 100%; height: 250px; z-index: 999;">
+					
+				</div> -->
 			</div>
 		</view>
 		<view class="bg1">
 			<view>
-				<image class="micon" src="../../static/svg/notice.svg" style="vertical-align: middle;"></image>
+				<image class="micon vm" src="../../static/svg/notice.svg"></image>
 				公告 {{notice}}
 			</view>
 		</view>
 		<view class="bg2">
 			<div class="flex-container">
 				<div class="flex-item" style="width: 20%;">
-					<div class="flex-container" style="flex-direction:column">
+					<div class="flex-container fc">
 						<div class="flex-item">
 							<image class="icon" src="../../static/svg/discount.svg"></image>
 						</div>
@@ -33,7 +36,7 @@
 					</div>
 				</div>
 				<div class="flex-item" style="width: 20%;">
-					<div class="flex-container" style="flex-direction:column">
+					<div class="flex-container fc">
 						<div class="flex-item">
 							<image class="icon" src="../../static/svg/formula.svg"></image>
 						</div>
@@ -43,7 +46,7 @@
 					</div>
 				</div>
 				<div class="flex-item" style="width: 20%;">
-					<div class="flex-container" style="flex-direction:column">
+					<div class="flex-container fc">
 						<div class="flex-item">
 							<image class="icon" src="../../static/svg/reserve.svg"></image>
 						</div>
@@ -53,7 +56,7 @@
 					</div>
 				</div>
 				<div class="flex-item" style="width: 20%;">
-					<div class="flex-container" style="flex-direction:column">
+					<div class="flex-container fc">
 						<div class="flex-item">
 							<image class="icon" src="../../static/svg/reserve.svg"></image>
 						</div>
@@ -65,7 +68,7 @@
 			</div>
 			<div class="flex-container">
 				<div class="flex-item" style="width: 20%;">
-					<div class="flex-container" style="flex-direction:column">
+					<div class="flex-container fc">
 						<div class="flex-item">
 							<image class="icon" src="../../static/svg/wifi.svg"></image>
 						</div>
@@ -75,7 +78,7 @@
 					</div>
 				</div>
 				<div class="flex-item" style="width: 20%;">
-					<div class="flex-container" style="flex-direction:column">
+					<div class="flex-container fc">
 						<div class="flex-item">
 							<image class="icon" src="../../static/svg/nosmoke.svg"></image>
 						</div>
@@ -85,7 +88,7 @@
 					</div>
 				</div>
 				<div class="flex-item" style="width: 20%;">
-					<div class="flex-container" style="flex-direction:column">
+					<div class="flex-container fc">
 						<div class="flex-item">
 							<image class="icon" src="../../static/svg/wc.svg"></image>
 						</div>
@@ -95,7 +98,7 @@
 					</div>
 				</div>
 				<div class="flex-item" style="width: 20%;">
-					<div class="flex-container" style="flex-direction:column">
+					<div class="flex-container fc">
 						<div class="flex-item">
 							<image class="icon" src="../../static/svg/reserve.svg"></image>
 						</div>
@@ -139,21 +142,25 @@
 
 		<li v-for="rroom in rrooms">
 			<view class="rroom bg1">
-				<view>
+				<view style="position: relative;">
 					<view>
-						<image class="icon" src="../../static/svg/table.svg" style="vertical-align: middle;"></image>
+						<image class="icon vm" src="../../static/svg/table.svg"></image>
 						{{ rroom.name }}
 					</view>
+					<text
+						style="position: absolute; right: 5px; top: 20px;  transform:rotate(-7deg); color: dimgrey; font-size: 30px; font-weight:200;">
+						低至8元/小时!
+					</text>
 				</view>
 				<view>
 					<div class="flex-container2" style="height: 200px;">
 						<div class="flex-item" style="width: 50%;">
-							<image src="../../static/rooms/tangdao.png" class="im" mode="aspectFit"
+							<image :src="rroom.img" class="im" mode="aspectFit"
 								style="border-radius: 10px;"></image>
 						</div>
-						<div class="flex-item2" style="width: 50%; text-align: center;">
+						<div class="flex-item2" style="width: 50%;">
 							<text style="white-space: pre-wrap; padding: 10px; text-align: left;display: inline-block;">
-							{{rroom.desc}}\n每小时价格：8元\n每半庄价格：8.5元\n通宵价格：50元\n
+								{{rroom.desc}}\n8元/h, 8.5元/半庄，\n包桌 40元/h\n通宵价格：50元\n
 							</text>
 						</div>
 					</div>
@@ -162,14 +169,14 @@
 				<div class="grid-container">
 					<div class="grid-item">
 						<navigator url="/pages/reserve/reserve" hover-class="other-navigator-hover">
-							<image class="micon" src="../../static/svg/reserve.svg" style="vertical-align: middle;">
+							<image class="micon vm" src="../../static/svg/reserve.svg">
 							</image>
 							<text> 预约</text>
 						</navigator>
 					</div>
 					<div class="grid-item">
 						<navigator url="/pages/available" hover-class="other-navigator-hover">
-							<image class="micon" src="../../static/svg/available.svg" style="vertical-align: middle;">
+							<image class="micon vm" src="../../static/svg/available.svg">
 							</image>
 							<text> 可用时间段</text>
 						</navigator>
@@ -218,6 +225,7 @@
 				href: 'https://uniapp.dcloud.io/component/README?id=uniui',
 				notice: 'xxxxxxxxxxxx',
 				rooms: ['金之间, 13:00 ~ 18:00， 1人等待', '金之间, 13:00 ~ 18:00， 2人等待', '金之间, 13:00 ~ 18:00， 3人等待'],
+				img: '/static/rooms/tangdao.png',
 				rrooms: [{
 						"name": "金之间",
 						"img": "../../static/rooms/tangdao.png",
@@ -264,28 +272,6 @@
 	.rroom {
 		height: 330px;
 		margin-bottom: 10px;
-	}
-
-	.flex-container {
-		display: -webkit-flex;
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-	}
-	
-	.flex-item {
-		display: flex;
-	}
-
-	.flex-container2 {
-		display: -webkit-flex;
-		display: flex;
-		align-items: center;
-	}
-
-	.flex-item2 {
-		display: flex;
-		justify-content: center;
 	}
 
 	.grid-container {

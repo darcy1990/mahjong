@@ -133,4 +133,38 @@
 	.gradual {
 		background-image: linear-gradient(to bottom, white , lightgrey);
 	}
+	
+	.fc {
+		flex-direction:column;
+	}
+	
+	.vm {
+		vertical-align: middle;
+	}
+	
+	.flex-container {
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	
+	.flex-item {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.flex-container2 {
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+	}
+	
+	.flex-item2 {
+		display: flex;
+	}
+	
+	.uni-select {
+		font-size: 12px;
+	}
 </style>
